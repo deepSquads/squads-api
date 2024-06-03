@@ -30,7 +30,7 @@ export class SubmissionEntity1651802478465 implements MigrationInterface {
       `SELECT "id" FROM "public"."advanced_settings" WHERE "title" = 'Community recommendations'`,
     );
     await queryRunner.query(
-      `INSERT INTO "public"."source" ("id", "name", "advancedSettings", "image") VALUES ('community', 'Community recommendations', '{${settings.id}}', 'https://res.cloudinary.com/daily-now/image/upload/t_logo,f_auto/v1/logos/community')`,
+      `INSERT INTO "public"."source" ("id", "name", "advancedSettings", "image") VALUES ('community', 'Community recommendations', '{${settings.id}}', 'https://res.cloudinary.com/squads-now/image/upload/t_logo,f_auto/v1/logos/community')`,
     );
   }
 

@@ -5273,7 +5273,7 @@ const disallowHandles = [
   'zig',
   'amazontextract',
   'amazon-textract',
-  'daily-dev',
+  'squads-dev',
   'githubprofilereadme',
   'github-profile-readme',
   'awsecr',

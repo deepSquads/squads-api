@@ -7,7 +7,7 @@ dotenv.config({ path: '.env' });
 
 export const fallbackImages = {
   avatar:
-    'https://daily-now-res.cloudinary.com/image/upload/f_auto/v1664367305/placeholders/placeholder3',
+    'https://squads-now-res.cloudinary.com/image/upload/f_auto/v1664367305/placeholders/placeholder3',
 };
 
 export const REDIS_BANNER_KEY = 'boot:latest_banner';

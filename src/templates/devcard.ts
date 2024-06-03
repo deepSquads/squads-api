@@ -64,14 +64,14 @@ const rankShapes = [
 ];
 
 const rankBackgrounds = [
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263852/devcard/Dev_Card_Bg_-_No_Rank.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_I.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_B.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_S.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263639/devcard/Dev_Card_Bg_-_G.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263639/devcard/Dev_Card_Bg_-_P.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_D.jpg',
-  'https://daily-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_L.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263852/devcard/Dev_Card_Bg_-_No_Rank.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_I.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_B.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_S.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263639/devcard/Dev_Card_Bg_-_G.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263639/devcard/Dev_Card_Bg_-_P.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_D.jpg',
+  'https://squads-now-res.cloudinary.com/image/upload/v1626263638/devcard/Dev_Card_Bg_-_L.jpg',
 ];
 
 export function generateDevCard({

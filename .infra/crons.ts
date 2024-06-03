@@ -75,7 +75,7 @@ export const crons: Cron[] = [
     schedule: '5 3 * * 0',
   },
   {
-    name: 'daily-digest',
+    name: 'squads-digest',
     schedule: '7 * * * *',
     limits: {
       memory: '1Gi',

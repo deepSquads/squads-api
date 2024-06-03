@@ -13,7 +13,7 @@ export const uploadLogo = (name: string, stream: Readable): Promise<string> =>
           return reject(err);
         }
         return resolve(
-          `https://res.cloudinary.com/daily-now/image/upload/t_logo,f_auto/v1/${callResult.public_id}`,
+          `https://res.cloudinary.com/squads-now/image/upload/t_logo,f_auto/v1/${callResult.public_id}`,
         );
       },
     );

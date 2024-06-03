@@ -33,12 +33,12 @@ const debeziumTopicName = `${name}.changes`;
 const isPersonalizedDigestEnabled =
   config.require('enablePersonalizedDigest') === 'true';
 
-const { image, imageTag } = getImageAndTag(`us.gcr.io/daily-ops/daily-${name}`);
+const { image, imageTag } = getImageAndTag(`us.gcr.io/squads-ops/squads-${name}`);
 
 const { serviceAccount } = createServiceAccountAndGrantRoles(
   `${name}-sa`,
   name,
-  `daily-${name}`,
+  `squads-${name}`,
   [
     { name: 'profiler', role: 'roles/cloudprofiler.agent' },
     { name: 'trace', role: 'roles/cloudtrace.agent' },
@@ -588,7 +588,7 @@ if (!isAdhocEnv) {
         },
       },
       image: {
-        repository: 'gcr.io/daily-ops/clickhouse-sink-docker',
+        repository: 'gcr.io/squads-ops/clickhouse-sink-docker',
         tag: '46ee0a5b89506449be786cd416efb464f9f0390c',
       },
       resources: {

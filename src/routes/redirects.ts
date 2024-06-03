@@ -58,11 +58,11 @@ const redirectToStore =
       );
     } else if (browser.includes('edge')) {
       return res.redirect(
-        `https://microsoftedge.microsoft.com/addons/detail/daily-20-source-for-bu/cbdhgldgiancdheindpekpcbkccpjaeb${url.search}`,
+        `https://microsoftedge.microsoft.com/addons/detail/squads-20-source-for-bu/cbdhgldgiancdheindpekpcbkccpjaeb${url.search}`,
       );
     } else {
       return res.redirect(
-        `https://chrome.google.com/webstore/detail/daily-discover-web-techno/jlmpjdjjbgclbocgajdjefcidcncaied${url.search}`,
+        `https://chrome.google.com/webstore/detail/squads-discover-web-techno/jlmpjdjjbgclbocgajdjefcidcncaied${url.search}`,
       );
     }
   };

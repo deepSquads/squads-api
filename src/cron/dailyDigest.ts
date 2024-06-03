@@ -16,7 +16,7 @@ import { DEFAULT_TIMEZONE } from '../types';
 const sendType = UserPersonalizedDigestSendType.workdays;
 
 const cron: Cron = {
-  name: 'daily-digest',
+  name: 'squads-digest',
   handler: async (con, logger) => {
     const personalizedDigestQuery = con
       .createQueryBuilder()

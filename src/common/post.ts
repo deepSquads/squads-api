@@ -22,7 +22,7 @@ export const defaultImage = {
   ratio: parseFloat(process.env.DEFAULT_IMAGE_RATIO),
   placeholder: process.env.DEFAULT_IMAGE_PLACEHOLDER,
   welcomePost:
-    'https://daily-now-res.cloudinary.com/image/upload/f_auto,q_auto/public/welcome_post',
+    'https://squads-now-res.cloudinary.com/image/upload/f_auto,q_auto/public/welcome_post',
 };
 
 export const pickImageUrl = (post: {

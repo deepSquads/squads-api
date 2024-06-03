@@ -117,7 +117,7 @@ export const features = {
   personalizedDigest: new Feature('personalized_digest', {
     ...digestFeatureBaseConfig,
   }),
-  dailyDigest: new Feature('daily_personalized_digest', {
+  dailyDigest: new Feature('squads_personalized_digest', {
     ...digestFeatureBaseConfig,
   }),
 };

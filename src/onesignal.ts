@@ -31,7 +31,7 @@ export async function sendPushNotification(
   push.url = addNotificationUtm(targetUrl, 'push', type);
   push.data = { notificationId: id };
   push.chrome_web_badge =
-    'https://daily-now-res.cloudinary.com/image/upload/v1672745846/public/dailydev.png';
+    'https://squads-now-res.cloudinary.com/image/upload/v1672745846/public/dailydev.png';
   if (avatar) {
     push.chrome_web_icon = avatar.image;
   }
@@ -82,8 +82,8 @@ export async function sendReadingReminderPush(
     'reminder',
   );
   push.chrome_web_badge =
-    'https://daily-now-res.cloudinary.com/image/upload/v1672745846/public/dailydev.png';
+    'https://squads-now-res.cloudinary.com/image/upload/v1672745846/public/dailydev.png';
   push.chrome_web_icon =
-    'https://daily-now-res.cloudinary.com/image/upload/s--9vc188bS--/f_auto/v1712221649/1_smcxpz';
+    'https://squads-now-res.cloudinary.com/image/upload/s--9vc188bS--/f_auto/v1712221649/1_smcxpz';
   await client.createNotification(push);
 }

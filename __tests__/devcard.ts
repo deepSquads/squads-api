@@ -109,7 +109,7 @@ describe('mutation generateDevCard', () => {
   it('should generate new dev card based from the url', async () => {
     loggedUser = '1';
     const url =
-      'https://daily-now-res.cloudinary.com/image/upload/v1634801813/devcard/bg/halloween.jpg';
+      'https://squads-now-res.cloudinary.com/image/upload/v1634801813/devcard/bg/halloween.jpg';
     const res = await client.mutate(MUTATION, { variables: { url } });
     expect(res.errors).toBeFalsy();
     const devCards = await con.getRepository(DevCard).find();

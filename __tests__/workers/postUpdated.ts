@@ -1346,12 +1346,12 @@ describe('on youtube post', () => {
         channel_title: 'daily dev',
         comment_count: 3,
         content_curation: ['release'],
-        description: 'Try it out: https://daily.dev/daily-dev-search',
+        description: 'Try it out: https://daily.dev/squads-dev-search',
         duration: 63,
         keywords: [
           'developer-tools',
           'search-recommendations',
-          'daily-dev-search',
+          'squads-dev-search',
         ],
         like_count: 13,
         questions: [
@@ -1372,7 +1372,7 @@ describe('on youtube post', () => {
     expect(post).not.toBeNull();
     expect(post).toMatchObject({
       contentCuration: ['release'],
-      description: 'Try it out: https://daily.dev/daily-dev-search',
+      description: 'Try it out: https://daily.dev/squads-dev-search',
       readTime: 1,
       sourceId: 'unknown',
       summary:
