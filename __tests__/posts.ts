@@ -107,11 +107,11 @@ beforeEach(async () => {
   await saveFixtures(con, PostTag, postTagsFixture);
   await con
     .getRepository(User)
-    .save({ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' });
+    .save({ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' });
   await con.getRepository(User).save({
     id: '2',
     name: 'Lee',
-    image: 'https://daily.dev/lee.jpg',
+    image: 'https://squads.khulnasoft.com/lee.jpg',
   });
   await deleteKeysByPattern(`${rateLimiterName}:*`);
   await deleteKeysByPattern(`${highRateLimiterName}:*`);
@@ -513,7 +513,7 @@ describe('author field', () => {
   it('should return the author when set', async () => {
     await con
       .getRepository(User)
-      .save([{ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' }]);
+      .save([{ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' }]);
     await con.getRepository(Post).update('p1', { authorId: '1' });
     const res = await client.query(QUERY);
     expect(res.data).toMatchSnapshot();
@@ -542,7 +542,7 @@ describe('scout field', () => {
   it('should return the scout when set', async () => {
     await con
       .getRepository(User)
-      .save([{ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' }]);
+      .save([{ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' }]);
     await con.getRepository(Post).update('p1', { scoutId: '1' });
     const res = await client.query(QUERY);
     expect(res.data).toMatchSnapshot();
@@ -550,8 +550,8 @@ describe('scout field', () => {
 
   it('should return the scout and author correctly', async () => {
     await con.getRepository(User).save([
-      { id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' },
-      { id: '2', name: 'Lee', image: 'https://daily.dev/lee.jpg' },
+      { id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' },
+      { id: '2', name: 'Lee', image: 'https://squads.khulnasoft.com/lee.jpg' },
     ]);
     await con.getRepository(Post).update('p1', { scoutId: '1', authorId: '2' });
     const res = await client.query(QUERY);
@@ -576,7 +576,7 @@ describe('views field', () => {
     loggedUser = '1';
     await con
       .getRepository(User)
-      .save([{ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' }]);
+      .save([{ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' }]);
     await con.getRepository(Post).update('p1', { authorId: '1', views: 200 });
     const res = await client.query(QUERY);
     expect(res.errors).toBeFalsy();
@@ -994,7 +994,7 @@ describe('query postUpvotes', () => {
     await userRepo.save({
       id: '2',
       name: 'Lee',
-      image: 'https://daily.dev/lee.jpg',
+      image: 'https://squads.khulnasoft.com/lee.jpg',
     });
     await userPostRepo.save({
       userId: '1',
@@ -2139,7 +2139,7 @@ describe('mutation submitExternalLink', () => {
 
   const variables: Record<string, string> = {
     sourceId: 's1',
-    url: 'https://daily.dev',
+    url: 'https://squads.khulnasoft.com',
     commentary: 'My comment',
   };
 
@@ -2175,7 +2175,7 @@ describe('mutation submitExternalLink', () => {
     const articlePost = await con
       .getRepository(ArticlePost)
       .findOneBy({ url: variables.url });
-    expect(articlePost.url).toEqual('https://daily.dev');
+    expect(articlePost.url).toEqual('https://squads.khulnasoft.com');
     expect(articlePost.visible).toEqual(visible);
 
     expect(notifyContentRequested).toBeCalledTimes(1);
@@ -2537,7 +2537,7 @@ describe('mutation checkLinkPreview', () => {
     await deleteKeysByPattern(`${rateLimiterName}:*`);
   });
 
-  const variables: Record<string, string> = { url: 'https://daily.dev' };
+  const variables: Record<string, string> = { url: 'https://squads.khulnasoft.com' };
 
   it('should not authorize when not logged in', () =>
     testMutationErrorCode(

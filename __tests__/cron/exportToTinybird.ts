@@ -42,11 +42,11 @@ beforeEach(async () => {
   await saveFixtures(con, PostTag, postTagsFixture);
   await con
     .getRepository(User)
-    .save({ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' });
+    .save({ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' });
   await con.getRepository(User).save({
     id: '2',
     name: 'Lee',
-    image: 'https://daily.dev/lee.jpg',
+    image: 'https://squads.khulnasoft.com/lee.jpg',
   });
 });
 

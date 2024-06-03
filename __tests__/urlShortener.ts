@@ -80,7 +80,7 @@ describe('query getShortUrl', () => {
     expect(mockGetShortUrl).not.toHaveBeenCalled();
   });
 
-  it('should not work for URL not pointing to daily.dev', () => {
+  it('should not work for URL not pointing to squads.khulnasoft.com', () => {
     testQueryErrorCode(
       client,
       {

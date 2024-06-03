@@ -15,7 +15,7 @@ export class AdvancedSettingsUpgrade1715679235259
       `INSERT INTO advanced_settings
         ("title", "description", "group", "options")
         VALUES
-        ('Community picks', 'Posts specifically selected and submitted by daily.dev community members. These encompass a variety of content from across the web that has engaged our community.', 'content_source', '{"source": "community"}')`,
+        ('Community picks', 'Posts specifically selected and submitted by squads.khulnasoft.com community members. These encompass a variety of content from across the web that has engaged our community.', 'content_source', '{"source": "community"}')`,
     );
     // ADD CONTENT CURATION
     await queryRunner.query(

@@ -84,7 +84,7 @@ describe('DataLoaderService', () => {
     });
 
     const dataLoader = dataLoaderService.shortUrl;
-    const shortUrl = await dataLoader.load('https://daily.dev/test/1');
-    expect(shortUrl).toBe('https://daily.dev/test/1');
+    const shortUrl = await dataLoader.load('https://squads.khulnasoft.com/test/1');
+    expect(shortUrl).toBe('https://squads.khulnasoft.com/test/1');
   });
 });

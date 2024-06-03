@@ -110,7 +110,7 @@ it('should publish an event to redis', async () => {
     public: true,
     referenceId: null,
     referenceType: null,
-    targetUrl: 'https://daily.dev',
+    targetUrl: 'https://squads.khulnasoft.com',
     title: 'notification #1',
     type: NotificationType.CommentMention,
     uniqueKey: '0',

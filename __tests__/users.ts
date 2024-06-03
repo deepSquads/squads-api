@@ -81,20 +81,20 @@ beforeEach(async () => {
     {
       id: '1',
       name: 'Ido',
-      image: 'https://daily.dev/ido.jpg',
+      image: 'https://squads.khulnasoft.com/ido.jpg',
       timezone: 'utc',
       createdAt: new Date(),
     },
     {
       id: '2',
       name: 'Tsahi',
-      image: 'https://daily.dev/tsahi.jpg',
+      image: 'https://squads.khulnasoft.com/tsahi.jpg',
       timezone: userTimezone,
     },
     {
       id: '3',
       name: 'Lee',
-      image: 'https://daily.dev/lee.jpg',
+      image: 'https://squads.khulnasoft.com/lee.jpg',
       timezone: userTimezone,
       username: 'lee',
       twitter: 'lee',
@@ -1819,7 +1819,7 @@ describe('mutation updateUserProfile', () => {
     loggedUser = '1';
 
     const repo = con.getRepository(User);
-    await repo.update({ id: loggedUser }, { email: 'sample@daily.dev' });
+    await repo.update({ id: loggedUser }, { email: 'sample@squads.khulnasoft.com' });
     const user = await repo.findOneBy({ id: loggedUser });
     const username = 'aaa1';
     expect(user?.infoConfirmed).toBeFalsy();
@@ -1837,7 +1837,7 @@ describe('mutation updateUserProfile', () => {
     const repo = con.getRepository(User);
     const user = await repo.findOneBy({ id: loggedUser });
 
-    const email = 'sample@daily.dev';
+    const email = 'sample@squads.khulnasoft.com';
     expect(user?.infoConfirmed).toBeFalsy();
     const res = await client.mutate(MUTATION, {
       variables: { data: { email, username: 'uuu1', name: user.name } },
@@ -1920,7 +1920,7 @@ describe('mutation updateUserProfile', () => {
     loggedUser = '1';
 
     const repo = con.getRepository(User);
-    const email = 'sample@daily.dev';
+    const email = 'sample@squads.khulnasoft.com';
     await repo.update({ id: '2' }, { email });
 
     await testMutationErrorCode(
@@ -1954,7 +1954,7 @@ describe('mutation deleteUser', () => {
       {
         id: '404',
         name: 'Not found',
-        image: 'https://daily.dev/404.jpg',
+        image: 'https://squads.khulnasoft.com/404.jpg',
         timezone: 'utc',
         createdAt: new Date(),
       },
@@ -1976,7 +1976,7 @@ describe('mutation deleteUser', () => {
       {
         id: '404',
         name: 'Not found',
-        image: 'https://daily.dev/404.jpg',
+        image: 'https://squads.khulnasoft.com/404.jpg',
         timezone: 'utc',
         createdAt: new Date(),
       },
@@ -1995,7 +1995,7 @@ describe('mutation deleteUser', () => {
       {
         id: '404',
         name: 'Not found',
-        image: 'https://daily.dev/404.jpg',
+        image: 'https://squads.khulnasoft.com/404.jpg',
         timezone: 'utc',
         createdAt: new Date(),
       },
@@ -2033,7 +2033,7 @@ describe('DELETE /v1/users/me', () => {
       {
         id: '404',
         name: 'Not found',
-        image: 'https://daily.dev/404.jpg',
+        image: 'https://squads.khulnasoft.com/404.jpg',
         timezone: 'utc',
         createdAt: new Date(),
       },

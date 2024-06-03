@@ -22,7 +22,7 @@ beforeEach(async () => {
   const sourceRequest = repo.create({
     id,
     userId: '1',
-    sourceUrl: 'https://daily.dev',
+    sourceUrl: 'https://squads.khulnasoft.com',
     closed: false,
   });
   await saveFixtures(con, Source, sourcesFixture);
@@ -31,7 +31,7 @@ beforeEach(async () => {
     {
       id: '1',
       name: 'Ido',
-      image: 'https://daily.dev/ido.jpg',
+      image: 'https://squads.khulnasoft.com/ido.jpg',
       reputation: 3,
     },
   ]);

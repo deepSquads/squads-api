@@ -31,13 +31,13 @@ beforeEach(async () => {
     {
       id: '1',
       name: 'Ido',
-      image: 'https://daily.dev/ido.jpg',
+      image: 'https://squads.khulnasoft.com/ido.jpg',
       reputation: 3,
     },
     {
       id: '2',
       name: 'Tsahi',
-      image: 'https://daily.dev/tsahi.jpg',
+      image: 'https://squads.khulnasoft.com/tsahi.jpg',
       reputation: 6,
     },
   ]);

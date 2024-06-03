@@ -1091,7 +1091,7 @@ describe('companion boot', () => {
     commentsPermalink: 'http://localhost:5002/posts/p1-p1',
     createdAt: expect.any(String),
     id: 'p1',
-    image: 'https://daily.dev/image.jpg',
+    image: 'https://squads.khulnasoft.com/image.jpg',
     numComments: 0,
     numUpvotes: 0,
     permalink: 'http://localhost:4000/r/sp1',

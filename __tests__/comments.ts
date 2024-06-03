@@ -54,13 +54,13 @@ beforeAll(async () => {
 });
 
 const usersFixture = [
-  { id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' },
-  { id: '2', name: 'Tsahi', image: 'https://daily.dev/tsahi.jpg' },
-  { id: '3', name: 'Nimrod', image: 'https://daily.dev/nimrod.jpg' },
-  { id: '4', name: 'Lee', image: 'https://daily.dev/lee.jpg' },
-  { id: '5', name: 'Hansel', image: 'https://daily.dev/Hansel.jpg' },
-  { id: '6', name: 'Samson', image: 'https://daily.dev/samson.jpg' },
-  { id: '7', name: 'Solevilla', image: 'https://daily.dev/solevilla.jpg' },
+  { id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' },
+  { id: '2', name: 'Tsahi', image: 'https://squads.khulnasoft.com/tsahi.jpg' },
+  { id: '3', name: 'Nimrod', image: 'https://squads.khulnasoft.com/nimrod.jpg' },
+  { id: '4', name: 'Lee', image: 'https://squads.khulnasoft.com/lee.jpg' },
+  { id: '5', name: 'Hansel', image: 'https://squads.khulnasoft.com/Hansel.jpg' },
+  { id: '6', name: 'Samson', image: 'https://squads.khulnasoft.com/samson.jpg' },
+  { id: '7', name: 'Solevilla', image: 'https://squads.khulnasoft.com/solevilla.jpg' },
 ];
 
 beforeEach(async () => {
@@ -618,7 +618,7 @@ describe('mutation commentOnPost', () => {
       client,
       {
         mutation: MUTATION,
-        variables: { postId: 'p1', content: '# my comment http://daily.dev' },
+        variables: { postId: 'p1', content: '# my comment http://squads.khulnasoft.com' },
       },
       'UNAUTHENTICATED',
     ));
@@ -631,7 +631,7 @@ describe('mutation commentOnPost', () => {
         mutation: MUTATION,
         variables: {
           postId: 'invalid',
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
         },
       },
       'NOT_FOUND',
@@ -644,7 +644,7 @@ describe('mutation commentOnPost', () => {
       client,
       {
         mutation: MUTATION,
-        variables: { postId: 'p1', content: '# my comment http://daily.dev' },
+        variables: { postId: 'p1', content: '# my comment http://squads.khulnasoft.com' },
       },
       'NOT_FOUND',
     );
@@ -653,7 +653,7 @@ describe('mutation commentOnPost', () => {
   it('should comment markdown on a post', async () => {
     loggedUser = '1';
     const res = await client.mutate(MUTATION, {
-      variables: { postId: 'p1', content: '# my comment http://daily.dev' },
+      variables: { postId: 'p1', content: '# my comment http://squads.khulnasoft.com' },
     });
     expect(res.errors).toBeFalsy();
     const actual = await con.getRepository(Comment).find({
@@ -664,7 +664,7 @@ describe('mutation commentOnPost', () => {
     expect(actual.length).toEqual(6);
     expect(actual[0]).toMatchSnapshot({
       id: expect.any(String),
-      contentHtml: `<h1>my comment <a href=\"http://daily.dev\" target=\"_blank\" rel=\"noopener nofollow\">http://daily.dev</a></h1>\n`,
+      contentHtml: `<h1>my comment <a href=\"http://squads.khulnasoft.com\" target=\"_blank\" rel=\"noopener nofollow\">http://squads.khulnasoft.com</a></h1>\n`,
     });
     expect(res.data.commentOnPost.id).toEqual(actual[0].id);
     const post = await con.getRepository(Post).findOneBy({ id: 'p1' });
@@ -847,7 +847,7 @@ describe('mutation commentOnComment', () => {
         mutation: MUTATION,
         variables: {
           commentId: 'c1',
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
         },
       },
       'UNAUTHENTICATED',
@@ -861,7 +861,7 @@ describe('mutation commentOnComment', () => {
         mutation: MUTATION,
         variables: {
           commentId: 'invalid',
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
         },
       },
       'NOT_FOUND',
@@ -876,7 +876,7 @@ describe('mutation commentOnComment', () => {
         mutation: MUTATION,
         variables: {
           commentId: 'c1',
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
         },
       },
       'NOT_FOUND',
@@ -891,7 +891,7 @@ describe('mutation commentOnComment', () => {
         mutation: MUTATION,
         variables: {
           commentId: 'c2',
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
         },
       },
       'FORBIDDEN',
@@ -906,7 +906,7 @@ describe('mutation commentOnComment', () => {
       {
         mutation: MUTATION,
         variables: {
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
           commentId: 'c1',
         },
       },
@@ -917,7 +917,7 @@ describe('mutation commentOnComment', () => {
   it('should comment on a comment', async () => {
     loggedUser = '1';
     const res = await client.mutate(MUTATION, {
-      variables: { content: '# my comment http://daily.dev', commentId: 'c1' },
+      variables: { content: '# my comment http://squads.khulnasoft.com', commentId: 'c1' },
     });
     expect(res.errors).toBeFalsy();
     const actual = await con.getRepository(Comment).find({
@@ -953,7 +953,7 @@ describe('mutation commentOnComment', () => {
       {
         mutation: MUTATION,
         variables: {
-          content: '# my comment http://daily.dev',
+          content: '# my comment http://squads.khulnasoft.com',
           commentId: 'c1',
         },
       },
@@ -965,7 +965,7 @@ describe('mutation commentOnComment', () => {
     const redisKey = `${rateLimiterName}:1:createComment`;
     const variables = {
       commentId: 'c1',
-      content: '# my comment http://daily.dev',
+      content: '# my comment http://squads.khulnasoft.com',
     };
     it('store rate limiting state in redis', async () => {
       loggedUser = '1';
@@ -1117,7 +1117,7 @@ describe('permalink field', () => {
   it('should return permalink', async () => {
     loggedUser = '1';
     const res = await client.mutate(MUTATION, {
-      variables: { postId: 'p1', content: '# my comment http://daily.dev' },
+      variables: { postId: 'p1', content: '# my comment http://squads.khulnasoft.com' },
     });
     expect(res.errors).toBeFalsy();
     expect(res.data.commentOnPost.permalink).toEqual(

@@ -1270,7 +1270,7 @@ describe('query authorFeed', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         twitter: 'idoshamun',
       },
     ]);

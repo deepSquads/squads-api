@@ -30,7 +30,7 @@ describe('postUpvoteCanceledRep worker', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         reputation: 250,
       },
     ]);
@@ -69,7 +69,7 @@ describe('postUpvoteCanceledRep worker', () => {
       {
         id: '3',
         name: 'Scout',
-        image: 'https://daily.dev/scout.jpg',
+        image: 'https://squads.khulnasoft.com/scout.jpg',
         reputation: 250,
       },
     ]);

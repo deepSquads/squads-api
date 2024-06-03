@@ -56,8 +56,8 @@ const generateRSS =
         return res.status(404).send();
       }
       const feed = new RSS({
-        title: `${title(user, state)} by daily.dev`,
-        generator: 'daily.dev RSS',
+        title: `${title(user, state)} by squads.khulnasoft.com`,
+        generator: 'squads.khulnasoft.com RSS',
         feed_url: `${process.env.URL_PREFIX}${req.raw.url}`,
         site_url: getUserProfileUrl(user.username),
       });

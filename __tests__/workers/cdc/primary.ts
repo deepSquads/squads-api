@@ -163,9 +163,9 @@ beforeEach(async () => {
 const defaultUser: ChangeObject<Omit<User, 'createdAt'>> = {
   id: '1',
   name: 'Ido',
-  email: 'ido@daily.dev',
-  permalink: 'https://app.daily.dev/idoshamun',
-  image: 'https://daily.dev/image.jpg',
+  email: 'ido@squads.khulnasoft.com',
+  permalink: 'https://app.squads.khulnasoft.com/idoshamun',
+  image: 'https://squads.khulnasoft.com/image.jpg',
   reputation: 5,
   devcardEligible: false,
   profileConfirmed: false,
@@ -184,7 +184,7 @@ describe('source request', () => {
     id: '1',
     userName: 'idoshamun',
     userId: '1',
-    userEmail: 'hi@daily.dev',
+    userEmail: 'hi@squads.khulnasoft.com',
     sourceUrl: 'http://source.com',
     closed: false,
     createdAt: 0,
@@ -1671,7 +1671,7 @@ describe('source feed', () => {
   type ObjectType = SourceFeed;
   const base: ChangeObject<ObjectType> = {
     sourceId: 's1',
-    feed: 'https://daily.dev',
+    feed: 'https://squads.khulnasoft.com',
     lastFetched: new Date().getTime(),
   };
 
@@ -2057,7 +2057,7 @@ describe('post relation collection', () => {
       shortId: 'pc1',
       title: 'PC1',
       description: 'pc1',
-      image: 'https://daily.dev/image.jpg',
+      image: 'https://squads.khulnasoft.com/image.jpg',
       sourceId: 'a',
       tagsStr: 'javascript,webdev',
       type: PostType.Collection,

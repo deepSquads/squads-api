@@ -46,7 +46,7 @@ Object {
   "github": null,
   "hashnode": null,
   "id": "1",
-  "image": "https://daily.dev/ido.jpg",
+  "image": "https://squads.khulnasoft.com/ido.jpg",
   "infoConfirmed": false,
   "name": "Ido",
   "notificationEmail": true,
@@ -321,7 +321,7 @@ Object {
 
 exports[`query user should return user info with name, username, and image 1`] = `
 Object {
-  "image": "https://daily.dev/ido.jpg",
+  "image": "https://squads.khulnasoft.com/ido.jpg",
   "name": "Ido",
   "username": null,
 }

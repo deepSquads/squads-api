@@ -162,7 +162,7 @@ config:
     webhookUrl:
       secure: AAABAINtY3LR2ciIEW/VPIBq7aqGyNJ5bjMKBi9GdN1ggEIIYWp4DA6HoWmCXQAgh2L845rO9NjEjbFK7XCV+fjQCU1lY2CjVcIXxDhIEYBjMf+wC+vP7nLt
   api:k8s:
-    host: subs.daily.dev
+    host: subs.squads.khulnasoft.com
     namespace: daily
   gcp:project: devkit-prod
   gcp:region: us-central1

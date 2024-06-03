@@ -312,7 +312,7 @@ describe('personalizedDigestEmail worker', () => {
 
     expect(sendEmail).toHaveBeenCalledTimes(1);
     const emailData = (sendEmail as jest.Mock).mock.calls[0][0];
-    expect(emailData.to).toEqual('ido@daily.dev');
+    expect(emailData.to).toEqual('ido@squads.khulnasoft.com');
   });
 
   it('should not generate personalized digest for user that did not confirm their info', async () => {

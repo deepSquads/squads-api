@@ -51,7 +51,7 @@ const readingReminderHeadings = [
 
 const readingReminderContents = [
   "Let's find something interesting to read",
-  "Dive into today's top picks on your daily.dev feed",
+  "Dive into today's top picks on your squads.khulnasoft.com feed",
   'Your next favorite post is just a tap away',
   "There's always something new to learn. Let's find it together",
   "Feed your brain with today's latest tech buzzwords",

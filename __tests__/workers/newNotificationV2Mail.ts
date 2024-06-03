@@ -144,7 +144,7 @@ it('should set parameters for community_picks_succeeded email', async () => {
     article_link: 'http://sample.abc.com',
     discussion_link:
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=community_picks_succeeded',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
     submitted_at: 'Dec 12, 2022',
   });
@@ -199,7 +199,7 @@ it('should set parameters for article_picked email', async () => {
   expect(args.message_data).toEqual({
     discussion_link:
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=article_picked',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
   });
   expect(args.transactional_message_id).toEqual('32');
@@ -244,9 +244,9 @@ it('should set parameters for article_new_comment email', async () => {
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=article_new_comment#c-c1',
     full_name: 'Tsahi',
     new_comment: 'parent comment',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
-    profile_image: 'https://daily.dev/tsahi.jpg',
+    profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     user_reputation: '2,500',
   });
   expect(args.transactional_message_id).toEqual('33');
@@ -279,7 +279,7 @@ it('should set parameters for article_upvote_milestone email', async () => {
   expect(args.message_data).toEqual({
     discussion_link:
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=article_upvote_milestone',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
     upvotes: '50',
     upvote_title: 'Good job! You earned 50 upvotes 🚴‍♀️',
@@ -310,7 +310,7 @@ it('should set parameters for article_report_approved email', async () => {
   const args = jest.mocked(sendEmail).mock
     .calls[0][0] as SendEmailRequestWithTemplate;
   expect(args.message_data).toEqual({
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
   });
   expect(args.transactional_message_id).toEqual('30');
@@ -353,7 +353,7 @@ it('should set parameters for article_analytics email', async () => {
     .calls[0][0] as SendEmailRequestWithTemplate;
   expect(args.message_data).toEqual({
     post_comments: '2',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
     post_upvotes: '6',
     post_views: '11',
@@ -372,7 +372,7 @@ it('should set parameters for source_approved email', async () => {
     .findOneBy({ id: sourcesFixture[0].id });
   const sourceRequest = await con.getRepository(SourceRequest).save({
     userId: '1',
-    sourceUrl: 'https://daily.dev',
+    sourceUrl: 'https://squads.khulnasoft.com',
     sourceFeed: 'https://rss.com',
     closed: false,
   });
@@ -409,7 +409,7 @@ it('should set parameters for source_approved email', async () => {
 it('should set parameters for source_rejected email', async () => {
   const sourceRequest = await con.getRepository(SourceRequest).save({
     userId: '1',
-    sourceUrl: 'https://daily.dev',
+    sourceUrl: 'https://squads.khulnasoft.com',
     sourceFeed: 'https://rss.com',
     closed: false,
   });
@@ -433,7 +433,7 @@ it('should set parameters for source_rejected email', async () => {
   const args = jest.mocked(sendEmail).mock
     .calls[0][0] as SendEmailRequestWithTemplate;
   expect(args.message_data).toEqual({
-    rss_link: 'https://daily.dev',
+    rss_link: 'https://squads.khulnasoft.com',
   });
   expect(args.transactional_message_id).toEqual('35');
 });
@@ -476,9 +476,9 @@ it('should set parameters for comment_mention email', async () => {
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=comment_mention#c-c1',
     full_name: 'Tsahi',
     comment: 'parent comment',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_title: 'P1',
-    commenter_profile_image: 'https://daily.dev/tsahi.jpg',
+    commenter_profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     user_reputation: '10',
   });
   expect(args.transactional_message_id).toEqual('29');
@@ -525,7 +525,7 @@ it('should set parameters for comment_reply email', async () => {
   const args = jest.mocked(sendEmail).mock
     .calls[0][0] as SendEmailRequestWithTemplate;
   expect(args.message_data).toEqual({
-    commenter_profile_image: 'https://daily.dev/tsahi.jpg',
+    commenter_profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     commenter_reputation: '10',
     discussion_link:
       'http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=comment_reply#c-c2',
@@ -534,7 +534,7 @@ it('should set parameters for comment_reply email', async () => {
     new_comment: 'child comment',
     post_title: 'P1',
     user_name: 'Ido',
-    user_profile_image: 'https://daily.dev/ido.jpg',
+    user_profile_image: 'https://squads.khulnasoft.com/ido.jpg',
     user_reputation: '10',
   });
   expect(args.transactional_message_id).toEqual('37');
@@ -595,7 +595,7 @@ it('should set parameters for squad_reply email', async () => {
     .calls[0][0] as SendEmailRequestWithTemplate;
   expect(args.message_data).toEqual({
     full_name: 'Tsahi',
-    profile_image: 'https://daily.dev/tsahi.jpg',
+    profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     squad_name: 'A',
     squad_image: 'http://image.com/a',
     commenter_reputation: '10',
@@ -604,7 +604,7 @@ it('should set parameters for squad_reply email', async () => {
       'http://localhost:5002/posts/ps?utm_source=notification&utm_medium=email&utm_campaign=squad_reply#c-c2',
     user_name: 'Ido',
     user_reputation: '10',
-    user_image: 'https://daily.dev/ido.jpg',
+    user_image: 'https://squads.khulnasoft.com/ido.jpg',
     main_comment: 'parent comment',
   });
   expect(args.transactional_message_id).toEqual('20');
@@ -727,11 +727,11 @@ it('should set parameters for squad_post_added email', async () => {
   expect(args.message_data).toEqual({
     commentary: 'Shared post',
     full_name: 'Tsahi',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_link:
       'http://localhost:5002/posts/ps?utm_source=notification&utm_medium=email&utm_campaign=squad_post_added',
     post_title: 'P1',
-    profile_image: 'https://daily.dev/tsahi.jpg',
+    profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     squad_image: 'http://image.com/a',
     squad_name: 'A',
     user_reputation: '10',
@@ -776,7 +776,7 @@ it('should set parameters for squad_member_joined email', async () => {
     new_member_handle: 'tsahidaily',
     post_link:
       'http://localhost:5002/posts/welcome1?comment=%40tsahidaily+welcome+to+A%21&utm_source=notification&utm_medium=email&utm_campaign=squad_member_joined',
-    profile_image: 'https://daily.dev/tsahi.jpg',
+    profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     squad_image: 'http://image.com/a',
     squad_name: 'A',
     user_reputation: '10',
@@ -836,14 +836,14 @@ it('should set parameters for squad_new_comment email', async () => {
     commenter_reputation: '2,500',
     full_name: 'Tsahi',
     new_comment: 'parent comment',
-    post_image: 'https://daily.dev/image.jpg',
+    post_image: 'https://squads.khulnasoft.com/image.jpg',
     post_link:
       'http://localhost:5002/posts/ps?utm_source=notification&utm_medium=email&utm_campaign=squad_new_comment#c-c1',
     post_title: 'P1',
-    profile_image: 'https://daily.dev/tsahi.jpg',
+    profile_image: 'https://squads.khulnasoft.com/tsahi.jpg',
     squad_image: 'http://image.com/a',
     squad_name: 'A',
-    user_image: 'https://daily.dev/ido.jpg',
+    user_image: 'https://squads.khulnasoft.com/ido.jpg',
     user_name: 'Ido',
     user_reputation: '10',
   });
@@ -1111,7 +1111,7 @@ describe('collection_post notification', () => {
 it('should send email to multiple users', async () => {
   const sourceRequest = await con.getRepository(SourceRequest).save({
     userId: '1',
-    sourceUrl: 'https://daily.dev',
+    sourceUrl: 'https://squads.khulnasoft.com',
     sourceFeed: 'https://rss.com',
     closed: false,
   });
@@ -1132,13 +1132,13 @@ it('should send email to multiple users', async () => {
     },
   });
   expect(sendEmail).toHaveBeenCalledTimes(2);
-  const authors = ['tsahi@daily.dev', 'ido@daily.dev'];
+  const authors = ['tsahi@squads.khulnasoft.com', 'ido@squads.khulnasoft.com'];
   authors.forEach((email, i) => {
     const args = jest.mocked(sendEmail).mock.calls[
       i
     ][0] as SendEmailRequestWithTemplate;
     expect(args.message_data).toEqual({
-      rss_link: 'https://daily.dev',
+      rss_link: 'https://squads.khulnasoft.com',
     });
     expect(args.transactional_message_id).toEqual('35');
     expect(authors).toContain(args.to);
@@ -1168,7 +1168,7 @@ describe('source_post_added notification', () => {
     const args = jest.mocked(sendEmail).mock
       .calls[0][0] as SendEmailRequestWithTemplate;
     expect(args.message_data).toEqual({
-      post_image: 'https://daily.dev/image.jpg',
+      post_image: 'https://squads.khulnasoft.com/image.jpg',
       post_link: `http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=${NotificationType.SourcePostAdded}`,
       post_title: 'P1',
       source_name: 'A',

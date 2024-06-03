@@ -1254,7 +1254,7 @@ export class AddNewOneAITags1658242193484 implements MigrationInterface {
                 ('cryptocurrency-exchange','synonym','crypto'),
                 ('csharp','synonym','c#'),
                 ('cybersecurity','synonym','cyber'),
-                ('daily.dev','synonym','dailydev'),
+                ('squads.khulnasoft.com','synonym','dailydev'),
                 ('data-analytics','synonym','data-analysis'),
                 ('data-scientist','synonym','data-science'),
                 ('deployment','synonym','cicd'),

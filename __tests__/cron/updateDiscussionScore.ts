@@ -17,16 +17,16 @@ beforeEach(async () => {
     {
       id: '1',
       name: 'Ido',
-      image: 'https://daily.dev/ido.jpg',
+      image: 'https://squads.khulnasoft.com/ido.jpg',
       reputation: 300,
     },
     {
       id: '2',
       name: 'Tsahi',
-      image: 'https://daily.dev/tsahi.jpg',
+      image: 'https://squads.khulnasoft.com/tsahi.jpg',
       reputation: 100,
     },
-    { id: '3', name: 'Nimrod', image: 'https://daily.dev/nimrod.jpg' },
+    { id: '3', name: 'Nimrod', image: 'https://squads.khulnasoft.com/nimrod.jpg' },
   ]);
 });
 

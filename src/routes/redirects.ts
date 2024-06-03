@@ -45,7 +45,7 @@ const redirectToStore =
   async (req: FastifyRequest, res: FastifyReply): Promise<FastifyReply> => {
     res.status(307);
     if (req.isBot) {
-      return res.redirect('https://daily.dev');
+      return res.redirect('https://squads.khulnasoft.com');
     }
 
     const ua = uaParser(req.headers['user-agent']);
@@ -72,7 +72,7 @@ const redirectToMobile =
   async (req: FastifyRequest, res: FastifyReply): Promise<FastifyReply> => {
     res.status(307);
     if (req.isBot) {
-      return res.redirect('https://app.daily.dev');
+      return res.redirect('https://app.squads.khulnasoft.com');
     }
 
     const ua = uaParser(req.headers['user-agent']);
@@ -85,7 +85,7 @@ const redirectToMobile =
         `https://play.google.com/store/apps/details${url.search}`,
       );
     } else {
-      return res.redirect(`https://app.daily.dev${url.search}`);
+      return res.redirect(`https://app.squads.khulnasoft.com${url.search}`);
     }
   };
 
@@ -110,16 +110,16 @@ const redirectToProfileImage = async (
 const redirectToLanding = (
   req: FastifyRequest,
   res: FastifyReply,
-): FastifyReply => res.redirect('https://daily.dev');
+): FastifyReply => res.redirect('https://squads.khulnasoft.com');
 
 export default async function (fastify: FastifyInstance): Promise<void> {
   const con = await createOrGetConnection();
 
   fastify.get('/', redirectToLanding);
   fastify.get('/landing', redirectToLanding);
-  fastify.get('/tos', (req, res) => res.redirect('https://daily.dev/tos'));
+  fastify.get('/tos', (req, res) => res.redirect('https://squads.khulnasoft.com/tos'));
   fastify.get('/privacy', (req, res) =>
-    res.redirect('https://daily.dev/privacy'),
+    res.redirect('https://squads.khulnasoft.com/privacy'),
   );
   fastify.get('/download', redirectToStore(con));
   fastify.get('/get', redirectToStore(con));

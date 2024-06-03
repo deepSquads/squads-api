@@ -178,7 +178,7 @@ describe('query banner', () => {
       subtitle: 'Subtitle',
       title: 'Title',
       theme: 'Theme',
-      url: 'https://daily.dev',
+      url: 'https://squads.khulnasoft.com',
     }),
   );
 

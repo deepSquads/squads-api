@@ -204,7 +204,7 @@ describe('mutation updateUserSettings', () => {
       {
         mutation: MUTATION,
         variables: {
-          data: { customLinks: ['https://app.daily.dev', 'http://'] },
+          data: { customLinks: ['https://app.squads.khulnasoft.com', 'http://'] },
         },
       },
       'GRAPHQL_VALIDATION_FAILED',

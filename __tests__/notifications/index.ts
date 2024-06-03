@@ -72,7 +72,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
         referenceId: '2',
         targetUrl: 'http://localhost:5002/tsahidaily',
@@ -166,7 +166,7 @@ describe('generateNotification', () => {
     expect(actual.avatars.length).toEqual(0);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
         referenceId: 'p1',
         title: 'P1',
         type: 'post',
@@ -209,7 +209,7 @@ describe('generateNotification', () => {
     expect(actual.avatars.length).toEqual(0);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
 
         referenceId: 'p1',
         title: 'P1',
@@ -242,7 +242,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
         referenceId: '2',
         targetUrl: 'http://localhost:5002/tsahidaily',
@@ -274,7 +274,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -282,7 +282,7 @@ describe('generateNotification', () => {
         type: 'user',
       },
       {
-        image: 'https://daily.dev/nimrod.jpg',
+        image: 'https://squads.khulnasoft.com/nimrod.jpg',
         name: 'Nimrod',
 
         referenceId: '3',
@@ -292,7 +292,7 @@ describe('generateNotification', () => {
     ]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
 
         referenceId: 'p1',
         title: 'P1',
@@ -318,7 +318,7 @@ describe('generateNotification', () => {
     expect(actual.userIds).toEqual([userId]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
         referenceId: 'p1',
         title: 'P1',
         type: NotificationAttachmentType.Video,
@@ -351,7 +351,7 @@ describe('generateNotification', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -359,7 +359,7 @@ describe('generateNotification', () => {
         type: 'user',
       },
       {
-        image: 'https://daily.dev/nimrod.jpg',
+        image: 'https://squads.khulnasoft.com/nimrod.jpg',
         name: 'Nimrod',
 
         referenceId: '3',
@@ -412,7 +412,7 @@ describe('generateNotification', () => {
       source: {
         id: 's1',
         name: 'Source',
-        image: 'https://daily.dev/s1.jpg',
+        image: 'https://squads.khulnasoft.com/s1.jpg',
         handle: 's1',
       } as Reference<Source>,
       sourceRequest: {
@@ -431,7 +431,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/s1.jpg',
+        image: 'https://squads.khulnasoft.com/s1.jpg',
         name: 'Source',
 
         referenceId: 's1',
@@ -484,7 +484,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -519,7 +519,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -556,7 +556,7 @@ describe('generateNotification', () => {
     );
     expect(actual.avatars).toEqual([
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -564,7 +564,7 @@ describe('generateNotification', () => {
         type: 'user',
       },
       {
-        image: 'https://daily.dev/nimrod.jpg',
+        image: 'https://squads.khulnasoft.com/nimrod.jpg',
         name: 'Nimrod',
 
         referenceId: '3',
@@ -607,7 +607,7 @@ describe('generateNotification', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -617,7 +617,7 @@ describe('generateNotification', () => {
     ]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
 
         referenceId: 'p1',
         title: 'P1',
@@ -664,7 +664,7 @@ describe('generateNotification', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -674,7 +674,7 @@ describe('generateNotification', () => {
     ]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
 
         referenceId: 'p1',
         title: 'P1',
@@ -729,7 +729,7 @@ describe('generateNotification', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -935,7 +935,7 @@ describe('storeNotificationBundle', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -980,7 +980,7 @@ describe('storeNotificationBundle', () => {
         type: 'source',
       },
       {
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
 
         referenceId: '2',
@@ -1022,7 +1022,7 @@ describe('storeNotificationBundle', () => {
     expect(actual.attachments!.length).toEqual(1);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
 
         referenceId: 'p1',
         title: 'P1',

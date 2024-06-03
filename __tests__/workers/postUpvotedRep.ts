@@ -28,13 +28,13 @@ describe('postUpvotedRep worker', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         reputation: 3,
       },
       {
         id: '2',
         name: 'Lee',
-        image: 'https://daily.dev/lee.jpg',
+        image: 'https://squads.khulnasoft.com/lee.jpg',
         reputation: 251,
       },
     ]);

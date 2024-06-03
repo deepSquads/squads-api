@@ -23,7 +23,7 @@ describe('remove user from mailing list worker', () => {
     process.env.SENDGRID_API_KEY = 'key';
     await expectSuccessfulTypedBackground(worker, {
       id: '1',
-      email: 'lee@daily.dev',
+      email: 'lee@squads.khulnasoft.com',
       kratosUser: true,
     });
     expect(getContactIdByEmail).toBeCalledTimes(1);

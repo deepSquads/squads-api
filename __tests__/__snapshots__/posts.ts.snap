@@ -137,7 +137,7 @@ Object {
         "node": Object {
           "user": Object {
             "bio": null,
-            "image": "https://daily.dev/lee.jpg",
+            "image": "https://squads.khulnasoft.com/lee.jpg",
             "name": "Lee",
             "username": null,
           },
@@ -148,7 +148,7 @@ Object {
         "node": Object {
           "user": Object {
             "bio": null,
-            "image": "https://daily.dev/ido.jpg",
+            "image": "https://squads.khulnasoft.com/ido.jpg",
             "name": "Ido",
             "username": null,
           },

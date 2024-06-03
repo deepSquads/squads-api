@@ -19,9 +19,9 @@ beforeAll(async () => {
 beforeEach(async () => {
   jest.resetAllMocks();
   await con.getRepository(ContentImage).save([
-    { serviceId: '1', url: 'https://daily.dev/1.jpg' },
-    { serviceId: '2', url: 'https://daily.dev/2.jpg' },
-    { serviceId: '3', url: 'https://daily.dev/3.jpg' },
+    { serviceId: '1', url: 'https://squads.khulnasoft.com/1.jpg' },
+    { serviceId: '2', url: 'https://squads.khulnasoft.com/2.jpg' },
+    { serviceId: '3', url: 'https://squads.khulnasoft.com/3.jpg' },
   ]);
 });
 
@@ -39,9 +39,9 @@ it('should do nothing for post without a content html', async () => {
 it('should set used images as not marked for deletion', async () => {
   const content = `
   # Here's my test markdown
-  ![alt1](https://daily.dev/1.jpg) image 1
-  ![alt2](https://daily.dev/2.jpg) image 2
-  ![alt3](https://daily.dev/doesnotexist.jpg) does not exist
+  ![alt1](https://squads.khulnasoft.com/1.jpg) image 1
+  ![alt2](https://squads.khulnasoft.com/2.jpg) image 2
+  ![alt3](https://squads.khulnasoft.com/doesnotexist.jpg) does not exist
   `;
   const html = markdown.render(content);
   await expectSuccessfulBackground(worker, {

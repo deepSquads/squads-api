@@ -117,7 +117,7 @@ describe('update_user_avatar', () => {
     expect(actual).toEqual([
       {
         id: expect.any(String),
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         name: 'Test',
         referenceId: '1',
         targetUrl: 'http://localhost:5002/idoshamun',
@@ -238,7 +238,7 @@ describe('update_post_notification_attachment', () => {
     expect(actual.userIds).toEqual([userId]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
         referenceId: 'p1',
         title: 'P1',
         type: NotificationAttachmentType.Post,
@@ -280,7 +280,7 @@ describe('update_post_notification_attachment', () => {
     expect(actual.userIds).toEqual([userId]);
     expect(actual.attachments).toEqual([
       {
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
         referenceId: 'p1',
         title: 'P1',
         type: NotificationAttachmentType.Post,
@@ -290,7 +290,7 @@ describe('update_post_notification_attachment', () => {
 
     await con
       .getRepository(ArticlePost)
-      .update({ id: 'p1' }, { image: 'https://daily.dev/image2.jpg' });
+      .update({ id: 'p1' }, { image: 'https://squads.khulnasoft.com/image2.jpg' });
 
     const updated = await con
       .getRepository(NotificationAttachmentV2)
@@ -298,6 +298,6 @@ describe('update_post_notification_attachment', () => {
         referenceId: 'p1',
       });
 
-    expect(updated!.image).toEqual('https://daily.dev/image2.jpg');
+    expect(updated!.image).toEqual('https://squads.khulnasoft.com/image2.jpg');
   });
 });

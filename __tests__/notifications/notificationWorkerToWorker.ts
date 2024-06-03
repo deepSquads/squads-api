@@ -63,7 +63,7 @@ describe('notificationWorkerToWorker', () => {
     expect(avatars).toEqual([
       {
         id: expect.any(String),
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         name: 'Ido',
         referenceId: '1',
         targetUrl: 'http://localhost:5002/idoshamun',
@@ -71,7 +71,7 @@ describe('notificationWorkerToWorker', () => {
       },
       {
         id: expect.any(String),
-        image: 'https://daily.dev/tsahi.jpg',
+        image: 'https://squads.khulnasoft.com/tsahi.jpg',
         name: 'Tsahi',
         referenceId: '2',
         targetUrl: 'http://localhost:5002/tsahidaily',
@@ -84,7 +84,7 @@ describe('notificationWorkerToWorker', () => {
     expect(attachments).toEqual([
       {
         id: expect.any(String),
-        image: 'https://daily.dev/image.jpg',
+        image: 'https://squads.khulnasoft.com/image.jpg',
         referenceId: 'p1',
         title: 'P1',
         type: 'post',
@@ -133,14 +133,14 @@ describe('notificationWorkerToWorker', () => {
   it('should reuse attachments and avatars', async () => {
     const worker = notificationWorkerToWorker(baseWorker);
     await con.getRepository(NotificationAvatarV2).save({
-      image: 'https://daily.dev/ido.jpg',
+      image: 'https://squads.khulnasoft.com/ido.jpg',
       name: 'Ido',
       referenceId: '1',
       targetUrl: 'http://localhost:5002/idoshamun',
       type: 'user',
     });
     await con.getRepository(NotificationAttachmentV2).save({
-      image: 'https://daily.dev/image.jpg',
+      image: 'https://squads.khulnasoft.com/image.jpg',
       referenceId: 'p1',
       title: 'P1',
       type: NotificationAttachmentType.Post,

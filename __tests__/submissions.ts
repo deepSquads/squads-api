@@ -40,7 +40,7 @@ beforeEach(async () => {
   await con.getRepository(User).save({
     id: '1',
     name: 'Lee',
-    image: 'https://daily.dev/lee.jpg',
+    image: 'https://squads.khulnasoft.com/lee.jpg',
     reputation: 250,
   });
 });
@@ -97,13 +97,13 @@ describe('query submissionAvailability', () => {
     await con.getRepository(User).save({
       id: '2',
       name: 'Hansel',
-      image: 'https://daily.dev/hansel.jpg',
+      image: 'https://squads.khulnasoft.com/hansel.jpg',
       reputation: 250,
     });
     await con.getRepository(User).save({
       id: '3',
       name: 'Solevilla',
-      image: 'https://daily.dev/solevilla.jpg',
+      image: 'https://squads.khulnasoft.com/solevilla.jpg',
       reputation: 250,
     });
     await con
@@ -312,7 +312,7 @@ describe('mutation submitArticle', () => {
 
   it('should create a submission entity if the url is valid', async () => {
     loggedUser = '1';
-    const request = 'https://daily.dev/amazing/article';
+    const request = 'https://squads.khulnasoft.com/amazing/article';
     const res = await client.mutate(MUTATION, { variables: { url: request } });
     expect(res.errors).toBeFalsy();
     const submission = await con

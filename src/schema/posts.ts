@@ -408,12 +408,12 @@ export const typeDefs = /* GraphQL */ `
     commentsPermalink: String!
 
     """
-    Author of the post (if they have a daily.dev account)
+    Author of the post (if they have a squads.khulnasoft.com account)
     """
     author: User
 
     """
-    Scout of the post who suggested the link (if they have a daily.dev account)
+    Scout of the post who suggested the link (if they have a squads.khulnasoft.com account)
     """
     scout: User
 

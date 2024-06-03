@@ -12,7 +12,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -24,7 +24,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -36,7 +36,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -48,7 +48,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -60,7 +60,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -72,10 +72,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": false,
@@ -83,10 +83,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "46",
 }
@@ -104,7 +104,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -116,7 +116,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -128,7 +128,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -140,7 +140,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -152,7 +152,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -164,10 +164,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": true,
@@ -175,10 +175,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "46",
 }
@@ -211,7 +211,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -223,7 +223,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -235,7 +235,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -247,7 +247,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -259,7 +259,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -271,10 +271,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": true,
@@ -282,10 +282,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "46",
 }
@@ -318,7 +318,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -330,7 +330,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -342,7 +342,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -354,7 +354,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -366,7 +366,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -378,10 +378,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": true,
@@ -389,10 +389,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "d-testtemplateidfromconfig",
 }
@@ -425,7 +425,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -437,7 +437,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -449,7 +449,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -461,7 +461,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -473,7 +473,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "test summary",
@@ -485,10 +485,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": true,
@@ -496,10 +496,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "46",
 }
@@ -532,7 +532,7 @@ Object {
     "posts": Array [
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p1?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -544,7 +544,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p2?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -556,7 +556,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p3?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -568,7 +568,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p4?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -580,7 +580,7 @@ Object {
       },
       Object {
         "post_comments": 5,
-        "post_image": "https://daily.dev/image.jpg",
+        "post_image": "https://squads.khulnasoft.com/image.jpg",
         "post_link": "http://localhost:5002/posts/p5?utm_source=notification&utm_medium=email&utm_campaign=digest",
         "post_read_time": 15,
         "post_summary": "In quis nulla lorem. Suspendisse potenti. Quisque gravida convallis urna, ut venenatis sapien. Maecenas sem odio, blandit vel auctor ut, pellentesque...",
@@ -592,10 +592,10 @@ Object {
       },
     ],
     "preview": "Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!",
-    "title": "Ido, your personal update from daily.dev is ready",
+    "title": "Ido, your personal update from squads.khulnasoft.com is ready",
     "user": Object {
       "currentStreak": 0,
-      "image": "https://daily.dev/ido.jpg",
+      "image": "https://squads.khulnasoft.com/ido.jpg",
       "maxStreak": 0,
       "reputation": 10,
       "showStreak": true,
@@ -603,10 +603,10 @@ Object {
     },
   },
   "queue_draft": false,
-  "reply_to": "noreply@daily.dev",
+  "reply_to": "noreply@squads.khulnasoft.com",
   "send_at": Any<Number>,
   "send_to_unsubscribed": false,
-  "to": "ido@daily.dev",
+  "to": "ido@squads.khulnasoft.com",
   "tracked": true,
   "transactional_message_id": "46",
 }

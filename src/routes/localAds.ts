@@ -6,7 +6,7 @@ const ads = [
       'Increase your dev team productivity by using feature-rich JavaScript UI widgets',
     image:
       'https://res.cloudinary.com/squads-now/image/upload/f_auto/v1/placeholders/1',
-    link: 'https://daily.dev',
+    link: 'https://squads.khulnasoft.com',
     source: 'daily',
     company: 'DAILY',
     providerId: 'direct',
@@ -19,21 +19,21 @@ const ads = [
       'Instantly find bottlenecks, slow SQL queries and request calls',
     image:
       'https://res.cloudinary.com/squads-now/image/upload/f_auto/v1/placeholders/2',
-    link: 'https://daily.dev',
+    link: 'https://squads.khulnasoft.com',
     source: 'EthicalAds',
     company: 'EthicalAds',
     providerId: 'ethical',
     pixel: [],
-    referralLink: 'https://daily.dev',
+    referralLink: 'https://squads.khulnasoft.com',
   },
   {
     description:
-      'Let us know what you think of the daily.dev extension on the chrome store!',
+      'Let us know what you think of the squads.khulnasoft.com extension on the chrome store!',
     image:
       'https://res.cloudinary.com/squads-now/image/upload/f_auto/v1/placeholders/3',
-    link: 'https://daily.dev',
+    link: 'https://squads.khulnasoft.com',
     source: 'cs1_glass',
-    company: 'daily.dev',
+    company: 'squads.khulnasoft.com',
     providerId: '',
     id: 'cs1_glass',
     placeholder: '',
@@ -44,12 +44,12 @@ const ads = [
       'Add passwordless login to your app in minutes. Passkeys, 2FA, Social Logins, & more. Start for free.',
     image:
       'https://res.cloudinary.com/squads-now/image/upload/f_auto/v1/placeholders/4',
-    link: 'https://daily.dev',
+    link: 'https://squads.khulnasoft.com',
     source: 'Carbon',
     company: 'Carbon',
     providerId: 'carbon',
     pixel: [],
-    referralLink: 'https://daily.dev',
+    referralLink: 'https://squads.khulnasoft.com',
   },
 ];
 

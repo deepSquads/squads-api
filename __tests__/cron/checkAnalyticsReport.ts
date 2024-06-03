@@ -18,7 +18,7 @@ beforeAll(async () => {
 beforeEach(async () => {
   await con
     .getRepository(User)
-    .save([{ id: '1', name: 'Ido', image: 'https://daily.dev/ido.jpg' }]);
+    .save([{ id: '1', name: 'Ido', image: 'https://squads.khulnasoft.com/ido.jpg' }]);
   await saveFixtures(con, Source, sourcesFixture);
   await saveFixtures(con, ArticlePost, [
     {

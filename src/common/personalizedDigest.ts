@@ -148,7 +148,7 @@ const getEmailVariation = async ({
     },
     message_data: {
       ...data,
-      title: `${userName}, your personal update from daily.dev is ready`,
+      title: `${userName}, your personal update from squads.khulnasoft.com is ready`,
       preview: `Here are several posts you might like. Each post was carefully selected based on topics you love reading about. Let's get to it!`,
     },
   };

@@ -1210,7 +1210,7 @@ describe('on youtube post', () => {
       {
         id: 'HR6jmCxzE',
         shortId: 'HR6jmCxzE',
-        title: 'Introducing daily.dev Search',
+        title: 'Introducing squads.khulnasoft.com Search',
         score: 0,
         url: 'https://www.youtube.com/watch?v=T_AbQGe7fuU',
         metadataChangedAt: new Date('2023-12-11T13:28:31.470744'),
@@ -1339,14 +1339,14 @@ describe('on youtube post', () => {
       order: 0,
       url: 'https://www.youtube.com/watch?v=T_AbQGe7fuU',
       image: 'https://i.ytimg.com/vi/T_AbQGe7fuU/sddefault.jpg',
-      title: 'Introducing daily.dev Search',
+      title: 'Introducing squads.khulnasoft.com Search',
       published_at: '2023-11-07T12:04:12Z',
       updated_at: '2023-12-11T13:28:36.997703Z',
       extra: {
         channel_title: 'daily dev',
         comment_count: 3,
         content_curation: ['release'],
-        description: 'Try it out: https://daily.dev/squads-dev-search',
+        description: 'Try it out: https://squads.khulnasoft.com/squads-dev-search',
         duration: 63,
         keywords: [
           'developer-tools',
@@ -1355,12 +1355,12 @@ describe('on youtube post', () => {
         ],
         like_count: 13,
         questions: [
-          'What is daily.dev Search?',
-          'How does search recommendations work on daily.dev?',
-          'What are the benefits of using daily.dev Search?',
+          'What is squads.khulnasoft.com Search?',
+          'How does search recommendations work on squads.khulnasoft.com?',
+          'What are the benefits of using squads.khulnasoft.com Search?',
         ],
         summary:
-          'Introducing daily.dev Search, a feature that allows users to dive deeper into topics they have read about on daily.dev. With search recommendations, users can easily find relevant content in their feeds.',
+          'Introducing squads.khulnasoft.com Search, a feature that allows users to dive deeper into topics they have read about on squads.khulnasoft.com. With search recommendations, users can easily find relevant content in their feeds.',
         view_count: 134,
         video_id: 'T_AbQGe7fuU',
       },
@@ -1372,12 +1372,12 @@ describe('on youtube post', () => {
     expect(post).not.toBeNull();
     expect(post).toMatchObject({
       contentCuration: ['release'],
-      description: 'Try it out: https://daily.dev/squads-dev-search',
+      description: 'Try it out: https://squads.khulnasoft.com/squads-dev-search',
       readTime: 1,
       sourceId: 'unknown',
       summary:
-        'Introducing daily.dev Search, a feature that allows users to dive deeper into topics they have read about on daily.dev. With search recommendations, users can easily find relevant content in their feeds.',
-      title: 'Introducing daily.dev Search',
+        'Introducing squads.khulnasoft.com Search, a feature that allows users to dive deeper into topics they have read about on squads.khulnasoft.com. With search recommendations, users can easily find relevant content in their feeds.',
+      title: 'Introducing squads.khulnasoft.com Search',
       type: 'video:youtube',
       url: 'https://www.youtube.com/watch?v=T_AbQGe7fuU',
       videoId: 'T_AbQGe7fuU',

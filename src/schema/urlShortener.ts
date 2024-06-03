@@ -8,7 +8,7 @@ import { ValidationError } from 'apollo-server-errors';
 export const typeDefs = /* GraphQL */ `
   extend type Query {
     """
-    Shorten URL using daily.dev URL shortener
+    Shorten URL using squads.khulnasoft.com URL shortener
     """
     getShortUrl(
       """

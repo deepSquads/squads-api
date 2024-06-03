@@ -9,7 +9,7 @@ export const notificationV2Fixture: DeepPartial<NotificationV2> = {
   icon: 'icon',
   title: 'notification #1',
   description: 'description',
-  targetUrl: 'https://daily.dev',
+  targetUrl: 'https://squads.khulnasoft.com',
   type: NotificationType.CommentMention,
   public: true,
 };

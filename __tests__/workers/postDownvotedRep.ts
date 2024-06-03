@@ -28,19 +28,19 @@ describe('postDownvotedRep worker', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         reputation: 3,
       },
       {
         id: '2',
         name: 'Lee',
-        image: 'https://daily.dev/lee.jpg',
+        image: 'https://squads.khulnasoft.com/lee.jpg',
         reputation: 251,
       },
       {
         id: '3',
         name: 'Chris',
-        image: 'https://daily.dev/chris.jpg',
+        image: 'https://squads.khulnasoft.com/chris.jpg',
         reputation: 251,
       },
     ]);

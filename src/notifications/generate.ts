@@ -33,11 +33,11 @@ export const notificationTitleMap: Record<
 > = {
   community_picks_failed: systemTitle,
   community_picks_succeeded: () =>
-    `<b>Community Picks:</b> A link you scouted was accepted and is now <span class="text-theme-color-cabbage">live</span> on the daily.dev feed!`,
+    `<b>Community Picks:</b> A link you scouted was accepted and is now <span class="text-theme-color-cabbage">live</span> on the squads.khulnasoft.com feed!`,
   community_picks_granted: () =>
     `<b>Community Picks:</b> You have earned enough reputation to <span class="text-theme-color-cabbage">scout and submit</span> links.`,
   article_picked: () =>
-    `Congrats! <b>Your post</b> got <span class="text-theme-color-cabbage">listed</span> on the daily.dev feed!`,
+    `Congrats! <b>Your post</b> got <span class="text-theme-color-cabbage">listed</span> on the squads.khulnasoft.com feed!`,
   article_new_comment: (ctx: NotificationCommenterContext) =>
     `<b>${ctx.commenter.name}</b> <span class="text-theme-color-blueCheese">commented</span> on your post.`,
   article_upvote_milestone: (
@@ -50,7 +50,7 @@ export const notificationTitleMap: Record<
   source_approved: (
     ctx: NotificationSourceRequestContext & NotificationSourceContext,
   ) =>
-    `<b>The source you suggested was</b> <span class="text-theme-color-cabbage">approved!</span> Posts from ${ctx.source.name} will start appearing in the daily.dev feed in the next few days!`,
+    `<b>The source you suggested was</b> <span class="text-theme-color-cabbage">approved!</span> Posts from ${ctx.source.name} will start appearing in the squads.khulnasoft.com feed in the next few days!`,
   source_rejected: systemTitle,
   comment_mention: (ctx: NotificationCommenterContext) =>
     `<b>${ctx.commenter.name}</b> <span class="text-theme-color-blueCheese">mentioned you</span> in a comment.`,
@@ -290,7 +290,7 @@ export const generateNotificationMap: Record<
       .referenceSystem()
       .icon(NotificationIcon.DevCard)
       .description(
-        'You can now generate your own DevCard to showcase your daily.dev achievements.',
+        'You can now generate your own DevCard to showcase your squads.khulnasoft.com achievements.',
       )
       .targetUrl(generateDevCard)
       .uniqueKey(ctx.userIds[0]),

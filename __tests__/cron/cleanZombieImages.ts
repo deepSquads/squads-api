@@ -15,19 +15,19 @@ beforeEach(async () => {
   await saveFixtures(con, ContentImage, [
     {
       serviceId: '1',
-      url: 'https://daily.dev/1.jpg',
+      url: 'https://squads.khulnasoft.com/1.jpg',
       usedByType: ContentImageUsedByType.Post,
       usedById: 'p1',
       createdAt: subDays(new Date(), 31),
     },
     {
       serviceId: '2',
-      url: 'https://daily.dev/2.jpg',
+      url: 'https://squads.khulnasoft.com/2.jpg',
       createdAt: subDays(new Date(), 60),
     },
     {
       serviceId: '3',
-      url: 'https://daily.dev/3.jpg',
+      url: 'https://squads.khulnasoft.com/3.jpg',
       createdAt: subDays(new Date(), 7),
     },
   ]);

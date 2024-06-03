@@ -57,7 +57,7 @@ describe('GET /r/:postId', () => {
       .get('/r/p1')
       .set('user-agent', TEST_UA)
       .set('cookie', 'da2=u1')
-      .set('referer', 'https://daily.dev')
+      .set('referer', 'https://squads.khulnasoft.com')
       .expect(200)
       .expect('content-type', 'text/html')
       .expect('referrer-policy', 'origin, origin-when-cross-origin')
@@ -69,7 +69,7 @@ describe('GET /r/:postId', () => {
       expect.anything(),
       'p1',
       'u1',
-      'https://daily.dev',
+      'https://squads.khulnasoft.com',
       expect.anything(),
       ['javascript', 'webdev'],
     );
@@ -105,7 +105,7 @@ describe('GET /:id/profile-image', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         timezone: 'utc',
         createdAt: new Date(),
       },
@@ -116,7 +116,7 @@ describe('GET /:id/profile-image', () => {
     return request(app.server)
       .get('/1/profile-image')
       .expect(302)
-      .expect('Location', 'https://daily.dev/ido.jpg');
+      .expect('Location', 'https://squads.khulnasoft.com/ido.jpg');
   });
 
   it('should return default image for non existing user', async () => {

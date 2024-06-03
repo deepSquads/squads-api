@@ -21,14 +21,14 @@ beforeEach(async () => {
   await con.getRepository(ContentImage).save([
     {
       serviceId: '1',
-      url: 'https://daily.dev/1.jpg',
+      url: 'https://squads.khulnasoft.com/1.jpg',
       usedByType: ContentImageUsedByType.Post,
       usedById: 'p1',
     },
-    { serviceId: '2', url: 'https://daily.dev/2.jpg' },
+    { serviceId: '2', url: 'https://squads.khulnasoft.com/2.jpg' },
     {
       serviceId: '3',
-      url: 'https://daily.dev/3.jpg',
+      url: 'https://squads.khulnasoft.com/3.jpg',
       usedByType: ContentImageUsedByType.Post,
       usedById: 'p2',
     },
@@ -50,7 +50,7 @@ it('should clear all used images when content is empty', async () => {
 it('should update used images', async () => {
   const content = `
   # Here's my test markdown
-  ![alt2](https://daily.dev/2.jpg) image 2
+  ![alt2](https://squads.khulnasoft.com/2.jpg) image 2
   `;
   const html = markdown.render(content);
   await expectSuccessfulBackground(worker, {

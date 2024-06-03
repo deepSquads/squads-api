@@ -30,7 +30,7 @@ describe('commentUpvoteCanceledRep worker', () => {
       {
         id: '1',
         name: 'Ido',
-        image: 'https://daily.dev/ido.jpg',
+        image: 'https://squads.khulnasoft.com/ido.jpg',
         reputation: 250,
       },
     ]);

@@ -125,7 +125,7 @@ exports[`mutation requestSource should add new source request 1`] = `
 Object {
   "requestSource": Object {
     "sourceUrl": "http://source.com",
-    "userEmail": "ido@daily.dev",
+    "userEmail": "ido@squads.khulnasoft.com",
     "userId": "1",
     "userName": "Ido",
   },

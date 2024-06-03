@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Squads API V2</h1>
-  <strong>Provide the daily.dev feed and engagement layer</strong>
+  <strong>Provide the squads.khulnasoft.com feed and engagement layer</strong>
 </div>
 <br>
 <p align="center">

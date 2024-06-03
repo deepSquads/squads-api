@@ -51,7 +51,7 @@ export const formatMailDate = (date: Date): string =>
   });
 
 export const baseNotificationEmailData: SendEmailRequestOptionalOptions = {
-  reply_to: 'noreply@daily.dev',
+  reply_to: 'noreply@squads.khulnasoft.com',
   tracked: true,
   send_to_unsubscribed: false,
   queue_draft: false,
@@ -74,7 +74,7 @@ export const sendEmail = async (
       ...data,
       headers: {
         'List-Unsubscribe-Post': 'List-Unsubscribe=One-Click',
-        'List-Unsubscribe': `<https://api.daily.dev/unsubscribe?token=${token.token}>`,
+        'List-Unsubscribe': `<https://api.squads.khulnasoft.com/unsubscribe?token=${token.token}>`,
       },
     });
     await cioApi.sendEmail(req);

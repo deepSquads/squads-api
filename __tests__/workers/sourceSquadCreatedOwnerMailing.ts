@@ -74,7 +74,7 @@ describe('sourceSquadCreatedOwnerMailing worker', () => {
       source,
     });
     expect(getContactIdByEmail).toBeCalledTimes(1);
-    expect(getContactIdByEmail).toBeCalledWith('tsahi@daily.dev');
+    expect(getContactIdByEmail).toBeCalledWith('tsahi@squads.khulnasoft.com');
     expect(addUserToContacts).toBeCalledTimes(1);
     expect(addUserToContacts).toBeCalledWith(
       user,
