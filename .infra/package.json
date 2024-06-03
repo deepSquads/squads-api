@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "devDependencies": {
+    "@types/node": "^18.17.0"
+  },
+  "dependencies": {
+    "@deepsquads/pulumi-common": "^1.34.2",
+    "@pulumi/gcp": "^7.17.0",
+    "@pulumi/kubernetes": "^4.9.1",
+    "@pulumi/pulumi": "^3.112.0"
+  }
+}
